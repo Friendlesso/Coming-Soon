@@ -1,73 +1,34 @@
-# React + TypeScript + Vite
+# Base Apparel – Coming Soon Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## A clean landing page with email subscription and validation
 
-Currently, two official plugins are available:
+This project implements a “coming soon” landing page for Base Apparel, featuring a two-column hero layout with an image on the right and announcement text on the left. The email subscription form includes real-time validation, providing visual feedback for incorrect input, and subtle label animations to enhance interactivity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The component emphasizes responsive design, clear visual hierarchy, and interactive form elements, ensuring the page remains accessible and engaging across devices.
 
-## React Compiler
+### Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+#### Image of the Desktop Design
+![](./public/PageDesktop.png)
 
-## Expanding the ESLint configuration
+#### Image of the Mobile Design
+![](./public/PageMobile.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Email Form & Animation Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Email Validation: Provides immediate visual feedback when the input is invalid
+- Animated Labels: Smooth transitions enhance focus and usability
+- Responsive Layout: Hero image and content adjust gracefully for smaller screens
+- Interactive Feedback: Users can clearly see errors, improving user experience
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This project demonstrates handling form state, validation logic, and small UI animations to create a polished, user-friendly landing page.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Built with
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- [React](https://react.dev/) - JS library
+- [TypeScript](https://www.typescriptlang.org/) - type superset of JS
+- [Tailwindcss](https://tailwindcss.com/) - utility-first CSS framework
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Author
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Website - [Mihailo Djurovic](portfolio-miahilo.vercel.app)
