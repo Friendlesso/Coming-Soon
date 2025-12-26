@@ -1,12 +1,18 @@
 import { Email } from "../Email/Email"
 import { Logo } from "../Logo"
 
-export function PageContent() {
+type PageContentProps = {
+  isSmall: boolean;
+}
+
+export function PageContent({ isSmall }: PageContentProps) {
   return (
-    <section className="w-[60%] h-dvh bg-[url('/images/bg-pattern-desktop.svg')] bg-center bg-cover relative flex flex-col justify-center gap-25 px-8">
+    <section className="sm:w-[60%] sm:h-dvh h-[70vh] bg-[url('/images/bg-pattern-desktop.svg')] bg-center bg-cover relative flex flex-col justify-center gap-25 px-8">
       <div className="flex flex-col items-center justify-start">
-        <div>
-          <Logo />
+        <div className="text-center sm:text-left">
+          {!isSmall && (
+            <Logo isSmall={isSmall} />
+          )}
           <h1 className="text-7xl tracking-widest mb-8 text-(--text-pink) font-light">WE'RE <br />
             <span className="text-(--bold-heading) font-semibold">
               COMING

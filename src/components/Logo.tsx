@@ -1,9 +1,13 @@
 import LogoImg from '../assets/logo.svg';
 
-export function Logo() {
+type LogoProps = {
+  isSmall: boolean;
+}
+
+export function Logo({isSmall}: LogoProps) {
 
   return (
-    <div className='mb-20'>
+    <div className={` ${isSmall ? ' py-10 px-10' : 'mb-20'}`}>
       <img src={LogoImg} alt="Base Apparel logo" />
     </div>
   )
