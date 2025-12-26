@@ -5,9 +5,17 @@
   --bold-heading: hsl(0, 6%, 24%);
   --text-pink: hsl(0, 36%, 70%);
 
+  --text-pink-faded: hsl(0, 19%, 77%);
+
   /* Bacgkround Gradiant */
   --bg-gradiant-from: hsl(0, 0%, 100%);
   --bg-gradiant-to: hsl(0, 100%, 98%);
+
+  --border: hsl(0, 36%, 70%);
+
+  /* Button Gradiant */
+  --btn-gradiant-from: hsl(0, 80%, 86%);
+  --btn-gradiant-to: hsl(0, 74%, 74%);
 }
 
 body {
@@ -15,4 +23,3 @@ body {
   min-height: 100dvh;
   font-family: 'Josefin Sans';
 }
-
