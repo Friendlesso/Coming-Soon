@@ -2,7 +2,7 @@ import { Logo } from "../Logo"
 
 export function PageContent() {
   return (
-    <section className="w-[60%]">
+    <section className="w-[60%] h-dvh bg-[url('/images/bg-pattern-desktop.svg')] bg-center bg-cover relative">
       <Logo />
       <div>
         <h1 className="text-5xl tracking-widest text-(--text-pink) font-light">WE'RE <br /><span className="text-(--bold-heading) font-semibold text-5xl">COMING SOON</span></h1>
@@ -10,6 +10,7 @@ export function PageContent() {
           Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
       </div>
+      <div className="w-full h-full absolute top-0 left-0 bg-linear-to-br from-(--bg-gradiant-from) to-(--bg-gradiant-to) -z-10"></div>
     </section>
   )
 }
